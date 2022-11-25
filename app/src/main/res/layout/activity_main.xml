@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/writeInternalButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="WriteInternalOnClick"
+        android:text="@string/WriteInternal"
+        android:textSize="8sp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/editTextWrite"
+        android:layout_marginStart="16dp" />
+
+    <Button
+        android:id="@+id/ReadInternalButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="ReadInternalOnClick"
+        android:text="@string/ReadInternal"
+        android:textSize="8sp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/editTextWrite"
+        android:layout_marginStart="30dp"
+        app:layout_constraintStart_toEndOf="@+id/writeInternalButton" />
+
+    <Button
+        android:id="@+id/WriteExternalButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="WriteExternalOnClick"
+        android:text="@string/WriteExternal"
+        android:textSize="8sp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/writeInternalButton"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/editTextRead"
+        android:layout_marginStart="16dp"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/ReadExternalButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="ReadExternalOnClick"
+        android:text="@string/ReadExternal"
+        android:textSize="8sp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/ReadInternalButton"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/editTextRead"
+        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/WriteExternalButton"
+        android:layout_marginStart="29dp" />
+
+    <Button
+        android:id="@+id/DeleteInternalButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="DeleteInternalOnClick"
+        android:text="@string/DeleteInternal"
+        android:textSize="8sp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/editTextWrite"
+        app:layout_constraintStart_toEndOf="@+id/ReadInternalButton"
+        android:layout_marginStart="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="16dp" />
+
+    <Button
+        android:id="@+id/DeleteExternalButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="DeleteExternalOnClick"
+        android:text="@string/DeleteExternal"
+        android:textSize="8sp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/DeleteInternalButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/editTextRead"
+        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/ReadExternalButton"
+        android:layout_marginStart="8dp" />
+
+    <EditText
+        android:id="@+id/editTextWrite"
+        android:layout_width="0dp"
+        android:layout_height="141dp"
+        android:ems="10"
+        android:gravity="top|left"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginLeft="13dp"
+        android:layout_marginRight="13dp" />
+
+    <EditText
+        android:id="@+id/editTextRead"
+        android:layout_width="0dp"
+        android:layout_height="210dp"
+        android:ems="10"
+        android:gravity="top|left"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="284dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="17dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginLeft="14dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginRight="14dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,10 @@
+<resources>
+        <string name="app_name">FileInputOutputTrick</string>
+        <string name="WriteInternal">Write Internal</string>
+        <string name="ReadInternal">Read Internal</string>
+        <string name="DeleteInternal">Delete Internal</string>
+        <string name="WriteExternal">Write External</string>
+        <string name="ReadExternal">Read External</string>
+        <string name="DeleteExternal">Delete External</string>
+
+</resources>
